@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <style>
+        #video {
+            width: 100%;
+            height: 100%;
+        }
+
+        button {
+            width: 100%;
+        }
+
+        .controls{
+            position: relative;
+            bottom: 45px;
+            opacity: 0;
+            transition: all 1s ease;
+
+        }
+        .player:hover .controls{
+            opacity: 1;
+            
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="player">
+            <video src="./ElvisPresley - Always On My Mind.mp3" id="video"></video>
+
+            <div class="controls">
+            <button id="play" class="btn btn-primary" onclick="playVideo()">Play</button>
+            <button id="pouse" class="btn btn-warning" onclick="pauseVideo()" style="display: none;">Pause</button>
+        </div>
+        </div>
+
+    
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
